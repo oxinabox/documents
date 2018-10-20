@@ -38,6 +38,20 @@
 	 url: 'https://github.com/jupyter/nbconvert'
 	},
 	{
+	 name: 'nbconvert (WeaveAwayNotebooks)',
+	 type: 'nbconvert',
+	 sources: ['Jupyter Notebook'],
+	 targets: ['Script (Literate)'],
+	 url: 'https://github.com/oxinabox/WeaveAwayNotebooks'
+	},
+	{
+	 name: 'nbconvert (Jekyll)',
+	 type: 'nbconvert',
+	 sources: ['Jupyter Notebook'],
+	 targets: ['Markdown (Jekyll)'],
+	 url: 'https://github.com/oxinabox/oxinabox.github.io/tree/master/scripts/jupyter'
+	},
+	{
 	 name: 'Print to PDF',
 	 type: 'Printer',
 	 sources: ['HTML', 'Jupyter Notebook'],
