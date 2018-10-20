@@ -25,12 +25,13 @@
     }
     elements.push({
       data: {
-        id: name,
-        source: source,
-        target: target,
-        type: type,
-        sourceColor: COLORS[source] || '#ccc',
-        targetColor: COLORS[target] || '#ccc'
+		  id: name + ": " + source + " -> " + target,
+		  name: name,
+     	source: source,
+		target: target,
+		type: type,
+		sourceColor: COLORS[source] || '#ccc',
+		targetColor: COLORS[target] || '#ccc'
       }
     });
   }
@@ -68,7 +69,7 @@
         {
           selector: 'edge',
           style: {
-            'label': 'data(id)',
+            'label': 'data(name)',
             'width': 3,
             'font-size': function(ele) {
               return Math.min(Math.max(22 - ele.style()['label'].length,
