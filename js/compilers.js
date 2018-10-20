@@ -11,33 +11,45 @@
     },*/
     {
       name: 'Literate.jl',
-      source: 'Julia Script (Literate)',
-      target: 'Markdown (GFM)',
+      sources: ['Script (Literate)'],
+      targets: ['Markdown (GFM)', 'Markdown (Documenter.jl)', 'Jupyter Notebook', 'Script (Plain)'],
       type: 'Literate Programming',
       url: 'https://fredrikekre.github.io/Literate.jl/latest/'
     },
     {
-      name: 'Literate.jl',
-      source: 'Julia Script (Literate)',
-      target: 'Markdown (Documentor.jl)',
-      type: 'Literate Programming',
-      url: 'https://fredrikekre.github.io/Literate.jl/latest/'
-    },
-    {
-      name: 'Literate.jl',
-      source: 'Julia Script (Literate)',
-      target: 'JuPyTer Notebook',
-      type: 'Literate Programming',
-      url: 'https://fredrikekre.github.io/Literate.jl/latest/'
+      name: 'Documenter.jl',
+      sources: ['Markdown (Documenter.jl)'],
+      targets: ['Markdown (GFM)', 'HTML', 'PDF'],
+      type: 'Documentation Generation',
+      url: 'https://juliadocs.github.io/Documenter.jl'
     },
 	{
-      name: 'Literate.jl',
-      source: 'Julia Script (Literate)',
-      target: 'Julia Script (Plain)',
-      type: 'Literate Programming',
-      url: 'https://fredrikekre.github.io/Literate.jl/latest/'
+      name: 'MkDocs',
+      sources: ['Markdown (GFM)'],
+      targets: ['HTML'],
+      type: 'Documentation Generation',
+      url: 'https://www.mkdocs.org/'
     },
-
+	{
+	 name: 'nbconvert (default)',
+	 type: 'nbconvert',
+	 sources: ['Jupyter Notebook'],
+	 targets: ['HTML', 'LaTeX', 'PDF', 'Reveal JS', 'Markdown (GFM)', 'ReStructured Text', 'Script (Plain)'],
+	 url: 'https://github.com/jupyter/nbconvert'
+	},
+	{
+	 name: 'Print to PDF',
+	 type: 'Printer',
+	 sources: ['HTML', 'Jupyter Notebook'],
+	 targets: ['PDF'],
+	 url: ''
+	},
+	{
+	 name: 'LuaLaTeX',
+	 type: 'TeX',
+	 sources: ['LaTeX'],
+	 targets: ['PDF'],
+	},
   ];
 
 }).call(this);
